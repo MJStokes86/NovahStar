@@ -1,0 +1,30 @@
+{
+  "name": "novahstarr",
+  "version": "2.11.3",
+  "description": "Music Artist Page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MJStokes86/Novah-Starr.git"
+  },
+  "keywords": [
+    "any"
+  ],
+  "author": "Michael J. Stokes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MJStokes86/Novah-Starr/issues"
+  },
+  "homepage": "https://github.com/MJStokes86/Novah-Starr#readme",
+  "dependencies": {
+    "body-parser": "1.17.2",
+    "express": "4.15.4",
+    "nodemailer": "4.1.0",
+    "nodemon": "^1.12.0",
+    "xoauth2": "^1.2.0"
+  }
+}

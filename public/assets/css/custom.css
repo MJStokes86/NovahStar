@@ -1,0 +1,125 @@
+@font-face {
+	font-family: "font-awesome";
+	src: url("assets/fonts/fontawesome-webfont.woff2") format("woff2"),
+		url("assets/fonts/fontawesome-webfont.woff") format("woff"),
+		url("assets/fonts/fontawesome-webfont.eot") format("eot"),
+		url("assets/fonts/fontawesome-webfont.svg") format("svg"),
+		url("assets/fonts/FontAwesome.otf") format("opentype"),
+		url("assets/fonts/fontawesome-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+	background-color: #cf425f;
+}
+
+.entry-header,
+.page-header {
+	display: block !important;
+}
+
+#home-title {
+	display: none !important;
+}
+
+.entry-media {
+	position: relative;
+	text-align: center !important;
+}
+
+.site-navigation {
+	position: fixed !important;
+	background-color: #000 !important;
+}
+
+/* .site-title {
+	font-family: 'Impact', sans-serif !important;
+
+} */
+
+
+
+.block-grid {
+	position: relative;
+	left: 15% !important;
+}
+
+textarea {
+	resize: none !important;
+}
+
+
+.grunion-field-label {
+	text-align: center !important;
+}
+
+.pushbutton-wide {
+	position: relative;
+	top: 10px !important;
+	width: 100% !important;
+	
+}
+
+input {
+	margin-bottom: 3% !important;
+}
+
+.contact-submit {
+	width: 100% !important;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+	img {
+		max-width: 70% !important;
+	}
+
+	.site-title {
+		position: relative;
+		top: 150px !important;
+	}
+
+	#primary {
+		margin-bottom: 75% !important;
+	}
+
+	.widget-title {
+		position: relative;
+		left: 7% !important;
+	}
+
+	.textwidget {
+		text-align: center !important;
+		position: relative;
+		left: -15% !important;
+	}
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	body {
+		background-size: 10% !important;
+	}
+
+	.site-title {
+		position: relative;
+		top: 50px !important;
+	}
+
+	.textwidget {
+		text-align: left !important;
+	}
+
+	.widget-title {
+		position: relative;
+		left: -15% !important;
+	}
+
+
+}

@@ -1,0 +1,184 @@
+body.has-audiotheme-bar { margin-top: 40px;}
+body.has-audiotheme-bar.admin-bar #audiotheme-bar { top: 32px;}
+
+#audiotheme-bar {
+	background: #ffffff;
+	-webkit-box-shadow: inset 0 -1px 0 rgba( 0, 0, 0, 0.3 ), 0 1px 3px rgba( 0, 0, 0, 0.2 );
+	box-shadow: inset 0 -1px 0 rgba( 0, 0, 0, 0.3 ), 0 1px 3px rgba( 0, 0, 0, 0.2 );
+	color: #444444;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: left;
+	width: 100%;
+	z-index: 99998;
+}
+
+#audiotheme-bar .audiotheme-bar-logo {
+	border-width: 0;
+	display: block;
+	float: left;
+	height: auto;
+	margin: 8px 14px 0;
+	width: 46px;
+}
+
+#audiotheme-bar .audiotheme-bar-menu {
+	border: 1px solid #e5e5e5;
+	border-width: 0 1px;
+	float: left;
+	height: 39px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 194px;
+}
+
+#audiotheme-bar .audiotheme-bar-menu a {
+	background: transparent;
+	color: #5c5f66;
+	display: block;
+	padding: 0 20px;
+	text-decoration: none;
+}
+#audiotheme-bar .audiotheme-bar-menu a:hover,
+#audiotheme-bar .audiotheme-bar-menu.is-open a.audiotheme-bar-menu-current-item {
+	color: #5c5f66;
+}
+
+#audiotheme-bar .audiotheme-bar-menu a.audiotheme-bar-menu-current-item {
+	line-height: 40px;
+}
+
+#audiotheme-bar .audiotheme-bar-menu a.audiotheme-bar-menu-current-item:after {
+	color: #bdc3c7;
+	content: "\25be";
+	float: right;
+	font-size: 20px;
+}
+
+#audiotheme-bar .audiotheme-bar-menu li {
+	padding: 0;
+}
+
+#audiotheme-bar .audiotheme-bar-submenu {
+	background: #ffffff;
+	-webkit-box-shadow: inset 0 -1px 0 rgba( 0, 0, 0, 0.3 ), 0 2px 3px rgba( 0, 0, 0, 0.2 );
+	box-shadow: inset 0 -1px 0 rgba( 0, 0, 0, 0.3 ), 0 2px 3px rgba( 0, 0, 0, 0.2 );
+	display: none;
+	list-style: none;
+	margin: -1px 0 0;
+	padding: 0 0 10px 0;
+}
+
+#audiotheme-bar .audiotheme-bar-submenu a {
+	color: #7f8c8d;
+	font-weight: normal;
+	line-height: 30px;
+}
+
+#audiotheme-bar .audiotheme-bar-submenu a:hover {
+	background: #fbfbfb;
+	color: #5c5f66;
+}
+
+#audiotheme-bar .audiotheme-bar-action {
+	background-color: #e4002b;
+	border-width: 0;
+	color: #fff;
+	float: right;
+	font-size: 12px;
+	height: 40px;
+	letter-spacing: 0.1em;
+	line-height: 40px;
+	overflow: hidden;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-moz-transition: background-color 300ms ease-out 0s;
+	-webkit-transition: background-color 300ms ease-out 0s;
+	transition: background-color 300ms ease-out 0s;
+}
+
+#audiotheme-bar .audiotheme-bar-action svg {
+	fill: #fff;
+	height: 24px;
+	margin-right: 2px;
+	position: relative;
+	top: 7px;
+	width: 24px;
+}
+
+#audiotheme-bar .audiotheme-bar-action:hover {
+	background-color: #ff3358;
+	color: #fff;
+}
+
+#audiotheme-bar .audiotheme-bar-button-customize {
+	background-color: #919499;
+	color: #fff;
+}
+
+#audiotheme-bar .audiotheme-bar-button-customize:hover {
+	background-color: #5c5f66;
+	color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+	#audiotheme-bar .audiotheme-bar-menu {
+		max-width: 40px;
+		position: static;
+		width: auto;
+	}
+
+	#audiotheme-bar .audiotheme-bar-logo {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
+	#audiotheme-bar .audiotheme-bar-menu a.audiotheme-bar-menu-current-item {
+		padding: 0;
+		text-indent: -999px;
+		width: 40px;
+	}
+
+	#audiotheme-bar .audiotheme-bar-menu a.audiotheme-bar-menu-current-item:after {
+		border-bottom: 1px solid transparent;
+		height: 39px;
+		position: relative;
+		text-align: center;
+		text-indent: 0;
+		width: 40px;
+		z-index: 1;
+	}
+
+	#audiotheme-bar .audiotheme-bar-menu.is-open a.audiotheme-bar-menu-current-item:after {
+		border-bottom-color: #ffffff;
+	}
+
+	#audiotheme-bar .audiotheme-bar-submenu {
+		margin-left: -1px;
+		padding-top: 10px;
+		position: absolute;
+		top: 41px;
+		left: 0;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 782px) {
+	body.has-audiotheme-bar.admin-bar #audiotheme-bar {
+		top: 46px;
+	}
+}
+
+@media only screen and (max-height: 400px),
+       only screen and (max-width: 600px) {
+	#audiotheme-bar {
+		position: absolute;
+	}
+}
